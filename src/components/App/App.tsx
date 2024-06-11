@@ -19,10 +19,14 @@ export const App: React.FC<AppProps> = ({ className }) => {
     <div className={clsx(styles.App, className)}>
       <div className={styles.container}>
         <h1>یه هدر تستی دیگه</h1>
+        <h2>یه هدر تستی دیگه</h2>
+        <h3>یه هدر تستی دیگه</h3>
+        <h4>یه هدر تستی دیگه</h4>
+        <h5>یه هدر تستی دیگه</h5>
         <a
-          href="https://github.com/usernein/react-mini-app"
-          target="_blank"
-          className={styles.githubLink}
+            href="https://github.com/usernein/react-mini-app"
+            target="_blank"
+            className={styles.githubLink}
         >
           <h1 className={styles.title}>خوشه، یادگیری حبه حبه</h1>
         </a>
