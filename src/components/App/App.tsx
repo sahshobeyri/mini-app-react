@@ -36,18 +36,28 @@ export const App: React.FC<AppProps> = ({ className }) => {
         </button>
 
         <h1 className={styles.subtitle}>درس ها</h1>
-        <button
-            dir="rtl"
-            onClick={showPopupOnSelectLesson('عادت های اتمی')}
-            className={styles.clickMe}>
-          ⭐️ عادت های اتمی
-        </button>
-        <button
-            dir="rtl"
-            onClick={showPopupOnSelectLesson('تفکر سیستمی')}
-            className={styles.clickMe}>
-          ⭐️ تفکر سیستمی
-        </button>
+        <div>
+          <img src="https://github.com/sahshobeyri/khooshe-js-bot/blob/master/img/lessons/l3/intro.PNG"
+               alt="system thinking image"/>
+          <h1 className={styles.subtitle}>تفکر سیستمی</h1>
+        </div>
+        <div>
+          <img src="https://github.com/sahshobeyri/khooshe-js-bot/blob/master/img/lessons/l4/intro.PNG"
+               alt="atomic habits image"/>
+          <h1 className={styles.subtitle}>عادت های اتمی</h1>
+        </div>
+        {/*<button*/}
+        {/*    dir="rtl"*/}
+        {/*    onClick={showPopupOnSelectLesson('عادت های اتمی')}*/}
+        {/*    className={styles.clickMe}>*/}
+        {/*  ⭐️ عادت های اتمی*/}
+        {/*</button>*/}
+        {/*<button*/}
+        {/*    dir="rtl"*/}
+        {/*    onClick={showPopupOnSelectLesson('تفکر سیستمی')}*/}
+        {/*    className={styles.clickMe}>*/}
+        {/*  ⭐️ تفکر سیستمی*/}
+        {/*</button>*/}
 
       </div>
     </div>
