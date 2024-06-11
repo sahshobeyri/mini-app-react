@@ -1,13 +1,29 @@
 import React from "react";
+import {useEffect, useState} from "react";
 import styles from "./App.module.scss";
 import clsx from "clsx";
 import { useShowPopup } from "@vkruglikov/react-telegram-web-app";
+import react from "@vitejs/plugin-react";
 
 export type AppProps = {
   className?: string;
 };
 export const App: React.FC<AppProps> = ({ className }) => {
+  const imageUrl = "https://github.com/sahshobeyri/khooshe-js-bot/blob/master/img/lessons/l3/intro.PNG";
   const showPopup = useShowPopup();
+  const [image,setImage] = useState();
+
+  const fetchImage = async () => {
+    const res = await fetch(imageUrl);
+    const imageBlob = await res.blob();
+    const imageObjectURL = URL.createObjectURL(imageBlob);
+    setImage(imageObjectURL);
+  };
+
+  useEffect(() => {
+    fetchImage().then();
+  }, []);
+
 
   const showPopupOnClick = async () => {
     const message =
@@ -37,12 +53,12 @@ export const App: React.FC<AppProps> = ({ className }) => {
 
         <h1 className={styles.subtitle}>درس ها</h1>
         <div>
-          <img src="https://github.com/sahshobeyri/khooshe-js-bot/blob/master/img/lessons/l3/intro.PNG"
+          <img src={image}
                alt="system thinking image"/>
           <h1 className={styles.subtitle}>تفکر سیستمی</h1>
         </div>
         <div>
-          <img src="https://github.com/sahshobeyri/khooshe-js-bot/blob/master/img/lessons/l4/intro.PNG"
+          <img src={image}
                alt="atomic habits image"/>
           <h1 className={styles.subtitle}>عادت های اتمی</h1>
         </div>
