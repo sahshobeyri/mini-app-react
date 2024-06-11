@@ -15,6 +15,11 @@ export const App: React.FC<AppProps> = ({ className }) => {
     await showPopup({ title: "به به!", message: message });
   };
 
+  const showPopupOnSelectLesson = async (lessonTitle) => {
+    const message = 'ممنون که درس ' + lessonTitle + 'رو انتخاب کردید.'
+    await showPopup({ title: 'انتخاب درس', message: message});
+  }
+
   return (
     <div className={clsx(styles.App, className)}>
       <div className={styles.container}>
@@ -31,10 +36,16 @@ export const App: React.FC<AppProps> = ({ className }) => {
         </button>
 
         <h1 className={styles.subtitle}>درس ها</h1>
-        <button dir="rtl" onClick={showPopupOnClick} className={styles.clickMe}>
+        <button
+            dir="rtl"
+            onClick={showPopupOnSelectLesson('عادت های اتمی')}
+            className={styles.clickMe}>
           ⭐️ عادت های اتمی
         </button>
-        <button dir="rtl" onClick={showPopupOnClick} className={styles.clickMe}>
+        <button
+            dir="rtl"
+            onClick={showPopupOnSelectLesson('تفکر سیستمی')}
+            className={styles.clickMe}>
           ⭐️ تفکر سیستمی
         </button>
 
