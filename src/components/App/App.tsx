@@ -38,13 +38,13 @@ export const App: React.FC<AppProps> = ({ className }) => {
         <h1 className={styles.subtitle}>درس ها</h1>
         <button
             dir="rtl"
-            onClick={showPopupOnSelectLesson('عادت های اتمی')}
+            onClick={()=>showPopupOnSelectLesson('عادت های اتمی')}
             className={styles.clickMe}>
           ⭐️ عادت های اتمی
         </button>
         <button
             dir="rtl"
-            onClick={showPopupOnSelectLesson('تفکر سیستمی')}
+            onClick={()=>showPopupOnSelectLesson('تفکر سیستمی')}
             className={styles.clickMe}>
           ⭐️ تفکر سیستمی
         </button>
