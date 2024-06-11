@@ -27,7 +27,7 @@ export const App: React.FC<AppProps> = ({ className }) => {
         </a>
 
         <button onClick={showPopupOnClick} className={styles.clickMe}>
-          Show popup! سلام بر شما
+          روی من کلیک کن.
         </button>
       </div>
     </div>
