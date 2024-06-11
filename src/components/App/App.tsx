@@ -15,7 +15,7 @@ export const App: React.FC<AppProps> = ({ className }) => {
     await showPopup({ title: "به به!", message: message });
   };
 
-  const showPopupOnSelectLesson = async (lessonTitle) => {
+  const showPopupOnSelectLesson = async (lessonTitle: string) => {
     const message = 'ممنون که درس ' + lessonTitle + 'رو انتخاب کردید.'
     await showPopup({ title: 'انتخاب درس', message: message});
   }
