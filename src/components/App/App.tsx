@@ -18,6 +18,7 @@ export const App: React.FC<AppProps> = ({ className }) => {
   return (
     <div className={clsx(styles.App, className)}>
       <div className={styles.container}>
+        <h1>یه هدر تستی دیگه</h1>
         <a
           href="https://github.com/usernein/react-mini-app"
           target="_blank"
