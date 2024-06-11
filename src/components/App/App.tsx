@@ -27,7 +27,7 @@ export const App: React.FC<AppProps> = ({ className }) => {
           <h1 className={styles.title}>خوشه، یادگیری حبه حبه</h1>
         </a>
 
-        <button onClick={showPopupOnClick} className={styles.clickMe}>
+        <button dir="rtl" onClick={showPopupOnClick} className={styles.clickMe}>
           روی من کلیک کن.
         </button>
       </div>
