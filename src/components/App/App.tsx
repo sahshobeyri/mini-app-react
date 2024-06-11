@@ -11,7 +11,7 @@ export type AppProps = {
 export const App: React.FC<AppProps> = ({ className }) => {
   const imageUrl = "https://github.com/sahshobeyri/khooshe-js-bot/blob/master/img/lessons/l3/intro.PNG";
   const showPopup = useShowPopup();
-  const [image,setImage] = useState();
+  const [image,setImage] = useState("");
 
   const fetchImage = async () => {
     const res = await fetch(imageUrl);
