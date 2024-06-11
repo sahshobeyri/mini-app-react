@@ -11,7 +11,7 @@ export const App: React.FC<AppProps> = ({ className }) => {
 
   const showPopupOnClick = async () => {
     const message =
-      "Thanks for using react-mini-app! I hope it helps you to create awesome Telegram Mini apps!";
+      "ممنون که خوشه رو برای یادگیری انتخاب کردید. قول میدم پشیمون نشید.";
     await showPopup({ title: "Hey!", message: message });
   };
 
