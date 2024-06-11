@@ -9,7 +9,7 @@ export type AppProps = {
   className?: string;
 };
 export const App: React.FC<AppProps> = ({ className }) => {
-  const imageUrl = "https://github.com/sahshobeyri/khooshe-js-bot/blob/master/img/lessons/l3/intro.PNG";
+  const imageUrl = "https://picsum.photos/200";
   const showPopup = useShowPopup();
   const [image,setImage] = useState("");
 
