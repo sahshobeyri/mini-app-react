@@ -23,7 +23,7 @@ export const App: React.FC<AppProps> = ({ className }) => {
           target="_blank"
           className={styles.githubLink}
         >
-          <h1 className={styles.title}>react-mini-app</h1>
+          <h1 className={styles.title}>خوشه، یادگیری حبه حبه</h1>
         </a>
 
         <button onClick={showPopupOnClick} className={styles.clickMe}>
