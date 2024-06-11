@@ -12,7 +12,7 @@ export const App: React.FC<AppProps> = ({ className }) => {
   const showPopupOnClick = async () => {
     const message =
       "ممنون که خوشه رو برای یادگیری انتخاب کردید. قول میدم پشیمون نشید.";
-    await showPopup({ title: "Hey!", message: message });
+    await showPopup({ title: "به به!", message: message });
   };
 
   return (
