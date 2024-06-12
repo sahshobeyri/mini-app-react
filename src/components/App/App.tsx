@@ -22,7 +22,7 @@ export const App: React.FC<AppProps> = ({ className }) => {
   const showPopup = useShowPopup();
   const [currentLesson, setCurrentLesson] = useState(0)
 
-  const lessonItem = (idx) => {
+  const lessonItem = (idx: number) => {
     const l = lessons[idx]
     return (<div className={styles.lessonCard}>
       <img width="150" src={l.introImg} alt={l.title + "img"}/>
