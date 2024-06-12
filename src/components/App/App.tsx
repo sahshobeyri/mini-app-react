@@ -61,7 +61,7 @@ export const App: React.FC<AppProps> = ({ className }) => {
         </a>
 
         <button dir="rtl" onClick={showPopupOnClick} className={styles.clickMe}>
-          روی من کلیک کن.
+          اینجا کجاست؟
         </button>
 
         <h1 className={styles.subtitle}>درس ها</h1>
