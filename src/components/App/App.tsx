@@ -55,12 +55,12 @@ export const App: React.FC<AppProps> = ({ className }) => {
 
         <h1 className={styles.subtitle}>درس ها</h1>
         <div>
-          <img src={imageUrls[0]}
+          <img width={150} src={imageUrls[0]}
                alt="system thinking image"/>
           <h1 className={styles.subtitle}>تفکر سیستمی</h1>
         </div>
         <div>
-          <img src={imageUrls[1]}
+          <img width={150} src={imageUrls[1]}
                alt="atomic habits image"/>
           <h1 className={styles.subtitle}>عادت های اتمی</h1>
         </div>
