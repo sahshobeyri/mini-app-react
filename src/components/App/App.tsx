@@ -32,7 +32,7 @@ export const App: React.FC<AppProps> = ({ className }) => {
   // }, []);
 
   const lessonsListItems = lessons.map(l =><li>
-    <img width="80%" src={l.introImg} alt={l.title + "img"}/>
+    <img width="30%" src={l.introImg} alt={l.title + "img"}/>
     {l.title}
   </li>)
   const lessonsList = <ul>
