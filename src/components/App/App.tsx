@@ -9,24 +9,35 @@ export type AppProps = {
   className?: string;
 };
 export const App: React.FC<AppProps> = ({ className }) => {
-  const imageUrls = [
-      "https://github.com/sahshobeyri/khooshe-js-bot/blob/master/img/lessons/l4/intro.PNG?raw=true",
-    "https://github.com/sahshobeyri/khooshe-js-bot/blob/master/img/lessons/l3/intro.PNG?raw=true"];
+  const lessons = [
+    {
+      title: "عادت های اتمی",
+      introImg: "https://github.com/sahshobeyri/khooshe-js-bot/blob/master/img/lessons/l4/intro.PNG?raw=true"
+    },
+    {
+      title: "تفکر سیستمی",
+      introImg: "https://github.com/sahshobeyri/khooshe-js-bot/blob/master/img/lessons/l3/intro.PNG?raw=true"
+    },
+  ];
   const showPopup = useShowPopup();
   // const [image,setImage] = useState("");
-
   // const fetchImage = async (idx:number) => {
   //   const res = await fetch(imageUrls[idx]);
   //   const imageBlob = await res.blob();
   //   const imageObjectURL = URL.createObjectURL(imageBlob);
   //   setImage(imageObjectURL);
   // };
-
   // useEffect(() => {
   //   fetchImage().then();
   // }, []);
 
-
+  const lessonsListItems = lessons.map(l =><li>
+    <img src={l.introImg} alt={l.title + "img"}/>
+    {l.title}
+  </li>)
+  const lessonsList = <ul>
+    {lessonsListItems}
+  </ul>
   const showPopupOnClick = async () => {
     const message =
       "ممنون که خوشه رو برای یادگیری انتخاب کردید. قول میدم پشیمون نشید.";
@@ -54,16 +65,17 @@ export const App: React.FC<AppProps> = ({ className }) => {
         </button>
 
         <h1 className={styles.subtitle}>درس ها</h1>
-        <div>
-          <img width={150} src={imageUrls[0]}
-               alt="system thinking image"/>
-          <h1 className={styles.subtitle} align={"center"}>تفکر سیستمی</h1>
-        </div>
-        <div>
-          <img width={150} src={imageUrls[1]}
-               alt="atomic habits image"/>
-          <h1 className={styles.subtitle}>عادت های اتمی</h1>
-        </div>
+        {lessonsList}
+        {/*<div>*/}
+        {/*  <img width={150} src={imageUrls[0]}*/}
+        {/*       alt="system thinking image"/>*/}
+        {/*  <h1 className={styles.subtitle} align={"center"}>تفکر سیستمی</h1>*/}
+        {/*</div>*/}
+        {/*<div>*/}
+        {/*  <img width={150} src={imageUrls[1]}*/}
+        {/*       alt="atomic habits image"/>*/}
+        {/*  <h1 className={styles.subtitle}>عادت های اتمی</h1>*/}
+        {/*</div>*/}
         {/*<button*/}
         {/*    dir="rtl"*/}
         {/*    onClick={showPopupOnSelectLesson('عادت های اتمی')}*/}
