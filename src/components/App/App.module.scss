@@ -21,7 +21,7 @@
     @apply flex flex-col items-center justify-center gap-2
   }
   .lessonCard {
-    @apply flex flex-col items-center justify-center gap-2
+    @apply flex flex-col items-center justify-center gap-2 border-2 border-amber-50
   }
   .githubLink {
     @apply link text-link;
