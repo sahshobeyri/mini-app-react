@@ -25,7 +25,7 @@ export const App: React.FC<AppProps> = ({ className }) => {
     const l = lessons[idx]
     return (<div className={styles.lessonCard}>
       <img width="150" src={l.introImg} alt={l.title + "img"}/>
-      {l.title}
+      <div className={lessonTitle}>{l.title}</div>
     </div>);
   }
   const nextLesson = () => {

@@ -10,10 +10,14 @@
   }
 
   .title {
-    @apply text-2xl font-bold;
+    @apply text-2xl font-black;
   }
 
   .subtitle {
+    @apply text-xl font-bold;
+  }
+
+  .lessonTitle {
     @apply text-xl;
   }
 
