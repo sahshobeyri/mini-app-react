@@ -11,10 +11,14 @@ export const App: React.FC<AppProps> = ({ className }) => {
   const lessons = [
     {
       title: "عادت های اتمی",
+      description: "هنر ساخت عادت های خوب، و تغییر زندگی با قدم های کوچک.",
+      author: "سیدامیرحسین شبیری",
       introImg: "https://github.com/sahshobeyri/khooshe-js-bot/blob/master/img/lessons/l4/intro.PNG?raw=true"
     },
     {
       title: "تفکر سیستمی",
+      description: "آشنایی با مبانی تفکر سیستمی، یک پنجره جدید برای نگاه به جهان.",
+      author: "مجید زنجیران",
       introImg: "https://github.com/sahshobeyri/khooshe-js-bot/blob/master/img/lessons/l3/intro.PNG?raw=true"
     },
   ];
@@ -23,9 +27,11 @@ export const App: React.FC<AppProps> = ({ className }) => {
 
   const lessonItem = (idx: number) => {
     const l = lessons[idx]
-    return (<div className={styles.lessonCard}>
+    return (<div className={styles.lessonCard} dir="rtl">
       <img width="150" src={l.introImg} alt={l.title + "img"}/>
       <div className={styles.lessonTitle}>{l.title}</div>
+      <div className={styles.lessonSubtitle}>{l.description}</div>
+      <div className={styles.lessonSubtitle}>{"توسط: " + l.author}</div>
     </div>);
   }
   const nextLesson = () => {
