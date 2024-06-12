@@ -31,13 +31,13 @@ export const App: React.FC<AppProps> = ({ className }) => {
   //   fetchImage().then();
   // }, []);
 
-  const lessonsListItems = lessons.map(l =><li>
+  const lessonsListItems = lessons.map(l =><div className={styles.lessonCard}>
     <img width="150" src={l.introImg} alt={l.title + "img"}/>
     {l.title}
-  </li>)
-  const lessonsList = <ul>
+  </div>)
+  const lessonsList = <div className={styles.lessonList}>
     {lessonsListItems}
-  </ul>
+  </div>
   const showPopupOnClick = async () => {
     const message =
       "ممنون که خوشه رو برای یادگیری انتخاب کردید. قول میدم پشیمون نشید.";

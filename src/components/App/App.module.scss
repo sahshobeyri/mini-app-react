@@ -17,6 +17,12 @@
     @apply text-xl;
   }
 
+  .lessonList {
+    @apply flex flex-col items-center justify-center gap-2
+  }
+  .lessonCard {
+    @apply flex flex-col items-center justify-center gap-2
+  }
   .githubLink {
     @apply link text-link;
 
