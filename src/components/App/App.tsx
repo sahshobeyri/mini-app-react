@@ -39,12 +39,12 @@ export const App: React.FC<AppProps> = ({ className }) => {
     }
   }
   const lessonSlider = <div className={styles.lessonSlider}>
-    <div className={styles.lessonSliderBtn} onClick={nextLesson}>
-      ▶️
-    </div>
-    {lessonItem(currentLesson)}
     <div className={styles.lessonSliderBtn} onClick={previousLesson}>
       ◀️
+    </div>
+    {lessonItem(currentLesson)}
+    <div className={styles.lessonSliderBtn} onClick={nextLesson}>
+      ▶️
     </div>
   </div>
   const showPopupOnClick = async () => {

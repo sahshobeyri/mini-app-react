@@ -21,7 +21,7 @@
     @apply flex flex-row items-center justify-center gap-2
   }
   .lessonSliderBtn {
-    @apply flex items-center justify-center p-1
+    @apply flex items-center justify-center p-1 cursor-pointer
   }
   .lessonCard {
     @apply flex flex-col items-center justify-center gap-2 border-2 border-amber-50 rounded-lg p-1
