@@ -21,16 +21,6 @@ export const App: React.FC<AppProps> = ({ className }) => {
   ];
   const showPopup = useShowPopup();
   const [currentLesson, setCurrentLesson] = useState(0)
-  // const [image,setImage] = useState("");
-  // const fetchImage = async (idx:number) => {
-  //   const res = await fetch(imageUrls[idx]);
-  //   const imageBlob = await res.blob();
-  //   const imageObjectURL = URL.createObjectURL(imageBlob);
-  //   setImage(imageObjectURL);
-  // };
-  // useEffect(() => {
-  //   fetchImage().then();
-  // }, []);
 
   const lessonItem = (idx) => {
     const l = lessons[idx]
@@ -49,10 +39,6 @@ export const App: React.FC<AppProps> = ({ className }) => {
       setCurrentLesson(currentLesson - 1)
     }
   }
-  // const lessonsListItems = lessons.map(l =><div className={styles.lessonCard}>
-  //   <img width="150" src={l.introImg} alt={l.title + "img"}/>
-  //   {l.title}
-  // </div>)
   const lessonSlider = <div className={styles.lessonSlider}>
     <div className={styles.lessonSliderBtn} onClick={nextLesson}>
       ▶️
@@ -67,11 +53,6 @@ export const App: React.FC<AppProps> = ({ className }) => {
         "ممنون که خوشه رو برای یادگیری انتخاب کردید. قول میدم پشیمون نشید.";
     await showPopup({ title: "به به!", message: message });
   };
-
-  // const showPopupOnSelectLesson = async (lessonTitle: string) => {
-  //   const message = 'ممنون که درس ' + lessonTitle + ' رو انتخاب کردید.'
-  //   await showPopup({ title: 'انتخاب درس', message: message});
-  // }
 
   return (
     <div className={clsx(styles.App, className)}>
