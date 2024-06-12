@@ -1,5 +1,5 @@
 import React from "react";
-import {useEffect, useState} from "react";
+// import {useEffect, useState} from "react";
 import styles from "./App.module.scss";
 import clsx from "clsx";
 import { useShowPopup } from "@vkruglikov/react-telegram-web-app";
@@ -9,20 +9,22 @@ export type AppProps = {
   className?: string;
 };
 export const App: React.FC<AppProps> = ({ className }) => {
-  const imageUrl = "https://picsum.photos/200";
+  const imageUrls = [
+      "https://github.com/sahshobeyri/khooshe-js-bot/blob/master/img/lessons/l4/intro.PNG?raw=true",
+    "https://github.com/sahshobeyri/khooshe-js-bot/blob/master/img/lessons/l3/intro.PNG?raw=true"];
   const showPopup = useShowPopup();
-  const [image,setImage] = useState("");
+  // const [image,setImage] = useState("");
 
-  const fetchImage = async () => {
-    const res = await fetch(imageUrl);
-    const imageBlob = await res.blob();
-    const imageObjectURL = URL.createObjectURL(imageBlob);
-    setImage(imageObjectURL);
-  };
+  // const fetchImage = async (idx:number) => {
+  //   const res = await fetch(imageUrls[idx]);
+  //   const imageBlob = await res.blob();
+  //   const imageObjectURL = URL.createObjectURL(imageBlob);
+  //   setImage(imageObjectURL);
+  // };
 
-  useEffect(() => {
-    fetchImage().then();
-  }, []);
+  // useEffect(() => {
+  //   fetchImage().then();
+  // }, []);
 
 
   const showPopupOnClick = async () => {
@@ -53,12 +55,12 @@ export const App: React.FC<AppProps> = ({ className }) => {
 
         <h1 className={styles.subtitle}>درس ها</h1>
         <div>
-          <img src={image}
+          <img src={imageUrls[0]}
                alt="system thinking image"/>
           <h1 className={styles.subtitle}>تفکر سیستمی</h1>
         </div>
         <div>
-          <img src={image}
+          <img src={imageUrls[1]}
                alt="atomic habits image"/>
           <h1 className={styles.subtitle}>عادت های اتمی</h1>
         </div>
