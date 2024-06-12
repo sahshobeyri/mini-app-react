@@ -57,7 +57,7 @@ export const App: React.FC<AppProps> = ({ className }) => {
         <div>
           <img width={150} src={imageUrls[0]}
                alt="system thinking image"/>
-          <h1 className={styles.subtitle}>تفکر سیستمی</h1>
+          <h1 className={styles.subtitle} align={"center"}>تفکر سیستمی</h1>
         </div>
         <div>
           <img width={150} src={imageUrls[1]}
