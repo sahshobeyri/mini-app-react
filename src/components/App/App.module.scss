@@ -17,8 +17,11 @@
     @apply text-xl;
   }
 
-  .lessonList {
-    @apply flex flex-col items-center justify-center gap-2
+  .lessonSlider {
+    @apply flex flex-row items-center justify-center gap-2
+  }
+  .lessonSliderBtn {
+    @apply flex items-center justify-center p-1
   }
   .lessonCard {
     @apply flex flex-col items-center justify-center gap-2 border-2 border-amber-50 rounded-lg p-1

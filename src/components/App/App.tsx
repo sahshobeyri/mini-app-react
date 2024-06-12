@@ -1,5 +1,5 @@
-import React from "react";
-// import {useEffect, useState} from "react";
+import React, {useState} from "react";
+import { useState} from "react";
 import styles from "./App.module.scss";
 import clsx from "clsx";
 import { useShowPopup } from "@vkruglikov/react-telegram-web-app";
@@ -20,6 +20,7 @@ export const App: React.FC<AppProps> = ({ className }) => {
     },
   ];
   const showPopup = useShowPopup();
+  const [currentLesson, setCurrentLesson] = useState(0)
   // const [image,setImage] = useState("");
   // const fetchImage = async (idx:number) => {
   //   const res = await fetch(imageUrls[idx]);
@@ -31,16 +32,38 @@ export const App: React.FC<AppProps> = ({ className }) => {
   //   fetchImage().then();
   // }, []);
 
-  const lessonsListItems = lessons.map(l =><div className={styles.lessonCard}>
-    <img width="150" src={l.introImg} alt={l.title + "img"}/>
-    {l.title}
-  </div>)
-  const lessonsList = <div className={styles.lessonList}>
-    {lessonsListItems}
+  const lessonItem = (l) => {
+    return (<div className={styles.lessonCard}>
+      <img width="150" src={l.introImg} alt={l.title + "img"}/>
+      {l.title}
+    </div>);
+  }
+  const nextLesson = () => {
+    if (currentLesson < lessons.length-1) {
+      setCurrentLesson(currentLesson + 1)
+    }
+  }
+  const previousLesson = () => {
+    if (currentLesson > 0) {
+      setCurrentLesson(currentLesson - 1)
+    }
+  }
+  // const lessonsListItems = lessons.map(l =><div className={styles.lessonCard}>
+  //   <img width="150" src={l.introImg} alt={l.title + "img"}/>
+  //   {l.title}
+  // </div>)
+  const lessonSlider = <div className={styles.lessonSlider}>
+    <div className={styles.lessonSliderBtn} onClick={nextLesson}>
+      ▶️
+    </div>
+    {lessonItem(currentLesson)}
+    <div className={styles.lessonSliderBtn} onClick={previousLesson}>
+      ◀️
+    </div>
   </div>
   const showPopupOnClick = async () => {
     const message =
-      "ممنون که خوشه رو برای یادگیری انتخاب کردید. قول میدم پشیمون نشید.";
+        "ممنون که خوشه رو برای یادگیری انتخاب کردید. قول میدم پشیمون نشید.";
     await showPopup({ title: "به به!", message: message });
   };
 
@@ -65,7 +88,7 @@ export const App: React.FC<AppProps> = ({ className }) => {
         </button>
 
         <h1 className={styles.subtitle}>درس ها</h1>
-        {lessonsList}
+        {lessonSlider}
         {/*<div>*/}
         {/*  <img width={150} src={imageUrls[0]}*/}
         {/*       alt="system thinking image"/>*/}
