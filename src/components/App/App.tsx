@@ -76,29 +76,6 @@ export const App: React.FC<AppProps> = ({ className }) => {
 
         <h1 className={styles.subtitle}>درس ها</h1>
         {lessonSlider}
-        {/*<div>*/}
-        {/*  <img width={150} src={imageUrls[0]}*/}
-        {/*       alt="system thinking image"/>*/}
-        {/*  <h1 className={styles.subtitle} align={"center"}>تفکر سیستمی</h1>*/}
-        {/*</div>*/}
-        {/*<div>*/}
-        {/*  <img width={150} src={imageUrls[1]}*/}
-        {/*       alt="atomic habits image"/>*/}
-        {/*  <h1 className={styles.subtitle}>عادت های اتمی</h1>*/}
-        {/*</div>*/}
-        {/*<button*/}
-        {/*    dir="rtl"*/}
-        {/*    onClick={showPopupOnSelectLesson('عادت های اتمی')}*/}
-        {/*    className={styles.clickMe}>*/}
-        {/*  ⭐️ عادت های اتمی*/}
-        {/*</button>*/}
-        {/*<button*/}
-        {/*    dir="rtl"*/}
-        {/*    onClick={showPopupOnSelectLesson('تفکر سیستمی')}*/}
-        {/*    className={styles.clickMe}>*/}
-        {/*  ⭐️ تفکر سیستمی*/}
-        {/*</button>*/}
-
       </div>
     </div>
   );
