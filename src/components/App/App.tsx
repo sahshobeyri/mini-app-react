@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React from "react";
 import styles from "./App.module.scss";
 import clsx from "clsx";
 import { useShowPopup } from "@vkruglikov/react-telegram-web-app";
