@@ -1,7 +1,8 @@
 import React from "react";
 import styles from "./App.module.scss";
 import clsx from "clsx";
-import logo from "./kicon.png"
+import logoIcon from "./kicon.png"
+import profileIcon from "./profile.png"
 
 export type AppProps = {
   className?: string;
@@ -12,10 +13,9 @@ export const App: React.FC<AppProps> = ({ className }) => {
     <div className={clsx(styles.App, className)}>
       <div className={styles.container}>
           <div dir="rtl" className={styles.header}>
-              {/*<div className={styles.headerText}>(آیکون)</div>*/}
-              <img src={logo} className={styles.headerImage} alt={"لوگو"}></img>
+              <img className={styles.headerLogo} src={logoIcon} alt={"لوگو"}></img>
               <div className={styles.headerText}>خوشه</div>
-              <div className={styles.headerText}>پروفایل</div>
+              <img className={styles.headerProfile} src={profileIcon} alt={"پروفایل"}></img>
           </div>
       </div>
         {/*<div className={styles.container}>*/}
