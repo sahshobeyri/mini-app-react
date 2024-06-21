@@ -9,6 +9,10 @@
     }
   }
 
+  .header {
+    @apply flex flex-row items-start justify-center gap-2 bg-amber-50 rounded-2xl p-3 border-2
+  }
+
   .title {
     @apply text-2xl font-black;
   }
