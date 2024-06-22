@@ -31,19 +31,49 @@ export const App: React.FC<AppProps> = ({ className }) => {
                     <div className={styles.card}>درس 3</div>
                 </div>
             </div>
+            <div dir="rtl" className={styles.cardFrame}>
+                <div dir="rtl" className={styles.cardFrameTitle}>
+                    سریع و کوتاه
+                </div>
+                <div dir="rtl" className={styles.cardSlider}>
+                    <div className={styles.card}>درس 1</div>
+                    <div className={styles.card}>درس 2</div>
+                    <div className={styles.card}>درس 3</div>
+                </div>
+            </div>
+            <div dir="rtl" className={styles.cardFrame}>
+                <div dir="rtl" className={styles.cardFrameTitle}>
+                    تاریخ
+                </div>
+                <div dir="rtl" className={styles.cardSlider}>
+                    <div className={styles.card}>درس 1</div>
+                    <div className={styles.card}>درس 2</div>
+                    <div className={styles.card}>درس 3</div>
+                </div>
+            </div>
+            <div dir="rtl" className={styles.cardFrame}>
+                <div dir="rtl" className={styles.cardFrameTitle}>
+                    خودیاری و توسعه فردی
+                </div>
+                <div dir="rtl" className={styles.cardSlider}>
+                    <div className={styles.card}>درس 1</div>
+                    <div className={styles.card}>درس 2</div>
+                    <div className={styles.card}>درس 3</div>
+                </div>
+            </div>
         </div>
 
         {/*<img className={styles.headerProfile} src={profileIcon} alt={"پروفایل"}></img>*/}
         {/*<div className={styles.container}>*/}
         {/*  <a*/}
         {/*      href="https://github.com/usernein/react-mini-app"*/}
-      {/*      target="_blank"*/}
-      {/*      className={styles.githubLink}*/}
-      {/*  >*/}
-      {/*    <h1 className={styles.title}>خوشه، یادگیری حبه حبه</h1>*/}
-      {/*  </a>*/}
+        {/*      target="_blank"*/}
+        {/*      className={styles.githubLink}*/}
+        {/*  >*/}
+        {/*    <h1 className={styles.title}>خوشه، یادگیری حبه حبه</h1>*/}
+        {/*  </a>*/}
 
-      {/*  <button dir="rtl" onClick={showPopupOnClick} className={styles.clickMe}>*/}
+        {/*  <button dir="rtl" onClick={showPopupOnClick} className={styles.clickMe}>*/}
       {/*    اینجا کجاست؟*/}
       {/*  </button>*/}
       {/*</div>*/}
