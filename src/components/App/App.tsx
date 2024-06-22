@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./App.module.scss";
 import clsx from "clsx";
 import logoIcon from "./kicon2.png"
-import profileIcon from "./profile.png"
+// import profileIcon from "./profile.png"
 
 export type AppProps = {
   className?: string;
