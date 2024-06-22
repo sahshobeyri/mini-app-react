@@ -1,8 +1,8 @@
 .App {
-  @apply flex w-full flex-col items-center justify-center;
+  @apply flex w-full h-full flex-col items-center justify-start;
 
   .container {
-    @apply flex w-full flex-col items-center justify-center gap-2.5 bg-secondaryBg rounded-lg duration-300;
+    @apply flex w-full flex-col items-center justify-start gap-2.5 bg-secondaryBg rounded-lg duration-300;
 
     &:hover {
       @apply shadow-md shadow-button
