@@ -17,6 +17,11 @@ export const App: React.FC<AppProps> = ({ className }) => {
               <div className={styles.headerText}>خوشه</div>
               {/*<img className={styles.headerProfile} src={profileIcon} alt={"پروفایل"}></img>*/}
           </div>
+          <div dir="rtl" className={styles.bannerFrame}>
+              <div className={styles.banner}>بنر 1</div>
+              <div className={styles.banner}>بنر 2</div>
+              <div className={styles.banner}>بنر 3</div>
+          </div>
       </div>
         {/*<div className={styles.container}>*/}
       {/*  <a*/}
