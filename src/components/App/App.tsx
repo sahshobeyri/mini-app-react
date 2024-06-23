@@ -64,13 +64,17 @@ export const App: React.FC<AppProps> = ({ className }) => {
             </div>
 
             <div dir="rtl" className={styles.categoryBubbles}>
-                <div dir="rtl" className={styles.categoryBubbleGrid}>
+                <div dir="rtl" className={styles.categoryBubbleRow}>
                     <div dir="rtl" className={styles.categoryBubble}>توسعه فردی</div>
                     <div dir="rtl" className={styles.categoryBubble}>روانشناسی</div>
                     <div dir="rtl" className={styles.categoryBubble}>تاریخ</div>
+                </div>
+                <div dir="rtl" className={styles.categoryBubbleRow}>
                     <div dir="rtl" className={styles.categoryBubble}>زبان</div>
                     <div dir="rtl" className={styles.categoryBubble}>کسب و کار</div>
                     <div dir="rtl" className={styles.categoryBubble}>مدیریت</div>
+                </div>
+                <div dir="rtl" className={styles.categoryBubbleRow}>
                     <div dir="rtl" className={styles.categoryBubble}>داستان و ادبیات</div>
                     <div dir="rtl" className={styles.categoryBubble}>جامعه شناسی</div>
                     <div dir="rtl" className={styles.categoryBubble}>جستجو</div>
