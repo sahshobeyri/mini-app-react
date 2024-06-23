@@ -17,20 +17,6 @@ export const App: React.FC<AppProps> = ({ className }) => {
                 <div className={styles.headerText}>خوشه</div>
             </div>
 
-            <div dir="rtl" className={styles.categoryBubbles}>
-                <div dir="rtl" className={styles.categoryBubbleGrid}>
-                    <div dir="rtl" className={styles.categoryBubble}>توسعه فردی</div>
-                    <div dir="rtl" className={styles.categoryBubble}>روانشناسی</div>
-                    <div dir="rtl" className={styles.categoryBubble}>تاریخ</div>
-                    <div dir="rtl" className={styles.categoryBubble}>زبان</div>
-                    <div dir="rtl" className={styles.categoryBubble}>کسب و کار</div>
-                    <div dir="rtl" className={styles.categoryBubble}>مدیریت</div>
-                    <div dir="rtl" className={styles.categoryBubble}>داستان و ادبیات</div>
-                    <div dir="rtl" className={styles.categoryBubble}>جامعه شناسی</div>
-                    <div dir="rtl" className={styles.categoryBubble}>جستجو</div>
-                </div>
-            </div>
-
             <div dir="rtl" className={styles.bannerFrame}>
                 <div className={styles.banner}>بنر 1</div>
                 <div className={styles.banner}>بنر 2</div>
@@ -47,7 +33,7 @@ export const App: React.FC<AppProps> = ({ className }) => {
                 </div>
             </div>
             <div dir="rtl" className={styles.cardFrame}>
-            <div dir="rtl" className={styles.cardFrameTitle}>
+                <div dir="rtl" className={styles.cardFrameTitle}>
                     سریع و کوتاه
                 </div>
                 <div dir="rtl" className={styles.cardSlider}>
@@ -77,6 +63,20 @@ export const App: React.FC<AppProps> = ({ className }) => {
                 </div>
             </div>
 
+            <div dir="rtl" className={styles.categoryBubbles}>
+                <div dir="rtl" className={styles.categoryBubbleGrid}>
+                    <div dir="rtl" className={styles.categoryBubble}>توسعه فردی</div>
+                    <div dir="rtl" className={styles.categoryBubble}>روانشناسی</div>
+                    <div dir="rtl" className={styles.categoryBubble}>تاریخ</div>
+                    <div dir="rtl" className={styles.categoryBubble}>زبان</div>
+                    <div dir="rtl" className={styles.categoryBubble}>کسب و کار</div>
+                    <div dir="rtl" className={styles.categoryBubble}>مدیریت</div>
+                    <div dir="rtl" className={styles.categoryBubble}>داستان و ادبیات</div>
+                    <div dir="rtl" className={styles.categoryBubble}>جامعه شناسی</div>
+                    <div dir="rtl" className={styles.categoryBubble}>جستجو</div>
+                </div>
+            </div>
+
         </div>
 
         {/*<img className={styles.headerProfile} src={profileIcon} alt={"پروفایل"}></img>*/}
@@ -90,9 +90,9 @@ export const App: React.FC<AppProps> = ({ className }) => {
         {/*  </a>*/}
 
         {/*  <button dir="rtl" onClick={showPopupOnClick} className={styles.clickMe}>*/}
-      {/*    اینجا کجاست؟*/}
-      {/*  </button>*/}
-      {/*</div>*/}
+        {/*    اینجا کجاست؟*/}
+        {/*  </button>*/}
+        {/*</div>*/}
     </div>
   );
 };
