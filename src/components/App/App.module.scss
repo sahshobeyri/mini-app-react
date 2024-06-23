@@ -10,7 +10,7 @@
   }
 
   .header {
-    @apply flex w-full flex-row items-center justify-start gap-2 bg-white p-3 border-2;
+    @apply flex w-full flex-row items-center justify-start gap-2 bg-white p-3;
   }
 
   .headerText {
@@ -23,12 +23,12 @@
 
   .bannerFrame{
     @apply flex w-full flex-row items-center justify-start
-    gap-2 bg-white rounded-sm p-3 border-2;
+    gap-2 bg-white rounded-sm p-3;
   }
 
   .cardFrame {
     @apply flex w-full flex-col items-start justify-start
-    gap-1 bg-white rounded-sm p-3 border-2;
+    gap-1 bg-white rounded-sm p-3;
   }
 
   .cardFrameTitle {
