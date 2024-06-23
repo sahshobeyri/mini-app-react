@@ -83,20 +83,6 @@ export const App: React.FC<AppProps> = ({ className }) => {
 
         </div>
 
-        {/*<img className={styles.headerProfile} src={profileIcon} alt={"پروفایل"}></img>*/}
-        {/*<div className={styles.container}>*/}
-        {/*  <a*/}
-        {/*      href="https://github.com/usernein/react-mini-app"*/}
-        {/*      target="_blank"*/}
-        {/*      className={styles.githubLink}*/}
-        {/*  >*/}
-        {/*    <h1 className={styles.title}>خوشه، یادگیری حبه حبه</h1>*/}
-        {/*  </a>*/}
-
-        {/*  <button dir="rtl" onClick={showPopupOnClick} className={styles.clickMe}>*/}
-        {/*    اینجا کجاست؟*/}
-        {/*  </button>*/}
-        {/*</div>*/}
     </div>
   );
 };
