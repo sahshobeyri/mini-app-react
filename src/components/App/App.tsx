@@ -81,6 +81,17 @@ export const App: React.FC<AppProps> = ({ className }) => {
                 </div>
             </div>
 
+            <div dir="rtl" className={styles.suggestUs}>
+                <div dir="rtl" className={styles.suggestUsTitle}>
+                    ما به طور منظم محتواهای جدیدی به خوشه اضافه می‌کنیم
+                </div>
+                <div dir="rtl" className={styles.suggestUsSubtitle}>
+                    اگه موضوع، کتاب یا مقاله‌ی خاصی هست که دوست داری به خوشه اضافه بشه،
+                    این‌جا به ما پیشنهاد بده.
+                </div>
+                <div dir="rtl" className={styles.suggestUsCta}>پیشنهاد بده</div>
+            </div>
+
         </div>
 
     </div>

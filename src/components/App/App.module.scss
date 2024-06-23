@@ -2,7 +2,7 @@
   @apply flex w-full h-full flex-col items-center justify-start;
 
   .container {
-    @apply flex w-full flex-col items-center justify-start gap-2.5 bg-secondaryBg rounded-lg duration-300;
+    @apply flex w-full flex-col items-center justify-start gap-2.5 bg-white rounded-lg duration-300;
 
     &:hover {
       @apply shadow-md shadow-button
@@ -95,6 +95,42 @@
   .headerProfile {
     width: 1.5rem;
     height: 1.5rem;
+  }
+
+  .suggestUs {
+    width: 80vw;
+    height: auto;
+    border-color: #8E24A8;
+    border-width: 2px;
+    @apply
+    flex flex-col
+    items-center justify-center
+    bg-white rounded-lg p-3;
+    gap: 4vw;
+  }
+
+  .suggestUsTitle{
+    font-weight: bolder;
+    text-align: center;
+    vertical-align: center;
+    color: black;
+  }
+
+  .suggestUsSubtitle {
+    font-weight: normal;
+    text-align: center;
+    vertical-align: center;
+    color: black;
+  }
+
+  .suggestUsCta {
+    font-weight: normal;
+    border-radius: 10rem;
+    border-color: black;
+    border-width: 2px;
+    background-color: #55A800;
+    color: black;
+    padding: 1rem;
   }
 
   .title {
