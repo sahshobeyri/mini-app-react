@@ -92,6 +92,10 @@ export const App: React.FC<AppProps> = ({ className }) => {
                 <div dir="rtl" className={styles.suggestUsCta}>پیشنهاد بده</div>
             </div>
 
+            <div dir="rtl" className={styles.footer}>
+                <div dir="rtl" className={styles.title}>سلام سلام</div>
+            </div>
+
         </div>
 
     </div>
