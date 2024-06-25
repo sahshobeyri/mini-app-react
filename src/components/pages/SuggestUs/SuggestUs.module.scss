@@ -6,15 +6,22 @@
   }
 
   .header {
-    @apply flex w-full flex-row items-center justify-start gap-2 bg-white p-3;
+    @apply flex w-full flex-row items-center justify-start gap-2 p-3;
+    background-color: #935697;
 
     .headerText {
-      color: #5F6368;
+      color: white;
       font-weight: bold;
       font-size: x-large;
       text-align: center;
       padding-bottom: 0.4rem;
       margin-right: 0.5rem;
+    }
+
+    .headerBackBtn {
+      width: 6vw;
+      height: 6vw;
+      cursor: pointer;
     }
   }
 }
