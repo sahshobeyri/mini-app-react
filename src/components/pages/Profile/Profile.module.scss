@@ -1,5 +1,5 @@
 .Profile {
-  @apply flex w-full h-full flex-col items-center justify-start;
+  @apply flex w-full h-full flex-col items-center justify-start bg-white;
 
   .container {
     @apply flex w-full flex-col items-center justify-start gap-2.5 bg-white rounded-lg duration-300;
