@@ -2,13 +2,12 @@
   background-color: #FAFAFA;
   color: white;
   text-align: center;
-  padding: 10px 0;
   position: fixed;
   bottom: 0;
   width: 100%;
   @apply
   flex flex-row
-  items-center justify-center shadow-2xl shadow-black;
+  items-center justify-center shadow-2xl shadow-black p-2;
   gap: 15vw;
 
   .footerIcon {
