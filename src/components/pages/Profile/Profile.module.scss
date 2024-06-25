@@ -1,0 +1,189 @@
+.Profile {
+  @apply flex w-full h-full flex-col items-center justify-start;
+
+  .container {
+    @apply flex w-full flex-col items-center justify-start gap-2.5 bg-white rounded-lg duration-300;
+
+    &:hover {
+      @apply shadow-md shadow-button
+    }
+  }
+
+  .header {
+    @apply flex w-full flex-row items-center justify-start gap-2 bg-white p-3;
+  }
+
+  .headerText {
+    color: #6C009C;
+    font-weight: bold;
+    font-size: x-large;
+    text-align: center;
+    padding-bottom: 0.4rem;
+  }
+
+  .bannerFrame{
+    @apply flex w-full flex-row items-center justify-start
+    gap-2 bg-white rounded-sm p-3;
+  }
+
+  .cardFrame {
+    @apply flex w-full flex-col items-start justify-start
+    gap-1 bg-white rounded-sm p-3;
+  }
+
+  .cardFrameTitle {
+    color: black;
+    font-size: 1rem;
+  }
+
+  .cardSlider {
+    @apply flex w-full flex-row items-center justify-start
+    gap-2 bg-white rounded-sm p-3;
+  }
+
+  .card {
+    color: black;
+    width: 7rem;
+    height: 7rem;
+    @apply
+    flex flex-row items-center justify-center
+    gap-2 bg-gray-2 rounded-xl p-3 border-2;
+  }
+
+  .banner {
+    color: black;
+    width: 10rem;
+    height: 7rem;
+    @apply
+    flex flex-row items-center justify-center
+    gap-2 bg-gray-2 rounded-xl p-3 border-2;
+  }
+
+  .categoryBubbles{
+    @apply
+    flex w-full flex-col
+    items-center justify-center
+    bg-white p-3;
+  }
+
+  .categoryBubbleRow {
+    @apply
+    flex w-full flex-row
+    items-center justify-center
+    bg-white p-3;
+    gap: 4vw;
+  }
+
+  .categoryBubble{
+    width: 25vw;
+    height: 25vw;
+    background-color: #3498db;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3vw;
+    font-weight: 800;
+    color: white;
+  }
+
+  .headerLogo {
+    width: 2.75rem;
+    height: 2.75rem;
+  }
+
+  .headerProfile {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .suggestUs {
+    width: 80vw;
+    height: auto;
+    border-color: #8E24A8;
+    border-width: 2px;
+    @apply
+    flex flex-col
+    items-center justify-center
+    bg-white rounded-lg p-3;
+    gap: 4vw;
+  }
+
+  .suggestUsTitle{
+    font-weight: bolder;
+    text-align: center;
+    vertical-align: center;
+    color: black;
+  }
+
+  .suggestUsSubtitle {
+    font-weight: normal;
+    text-align: center;
+    vertical-align: center;
+    color: black;
+  }
+
+  .suggestUsCta {
+    font-weight: normal;
+    border-radius: 10rem;
+    border-color: black;
+    border-width: 2px;
+    background-color: #55A800;
+    color: black;
+    padding: 1rem;
+  }
+
+  .footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .title {
+    @apply text-2xl font-black;
+  }
+
+  .subtitle {
+    @apply text-xl font-bold;
+  }
+
+  .lessonTitle {
+    @apply text-lg;
+  }
+
+  .lessonSubtitle {
+    @apply text-sm;
+    text-wrap: wrap;
+    text-align: center;
+    width: 50vw;
+  }
+
+  .lessonSlider {
+    @apply flex flex-row items-center justify-center gap-2
+  }
+  .lessonSliderBtn {
+    @apply flex items-center justify-center p-1 cursor-pointer
+  }
+  .lessonCard {
+    @apply flex flex-col items-center justify-center gap-2 border-2 border-blue-500 rounded-lg p-4
+  }
+  .githubLink {
+    @apply link text-link;
+
+    &:hover {
+      @apply underline text-link;
+    }
+  }
+
+  .clickMe {
+    @apply btn btn-sm btn-solid-primary bg-button text-buttonText;
+
+    &:hover {
+      @apply brightness-110 bg-button;
+    }
+  }
+}
