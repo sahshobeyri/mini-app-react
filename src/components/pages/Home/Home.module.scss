@@ -11,16 +11,21 @@
 
   .header {
     @apply flex w-full flex-row items-center justify-start gap-2 bg-white p-3;
-  }
 
-  .headerText {
-    color: #6C009C;
-    font-weight: bold;
-    font-size: x-large;
-    text-align: center;
-    padding-bottom: 0.4rem;
-  }
+    .headerLogo {
+      width: 2.75rem;
+      height: 2.75rem;
+    }
 
+    .headerText {
+      color: #6C009C;
+      font-weight: bold;
+      font-size: x-large;
+      text-align: center;
+      padding-bottom: 0.4rem;
+    }
+  }
+  
   .bannerFrame{
     @apply flex w-full flex-row items-center justify-start
     gap-2 bg-white rounded-sm p-3;
@@ -85,11 +90,6 @@
     font-size: 3vw;
     font-weight: 800;
     color: white;
-  }
-
-  .headerLogo {
-    width: 2.75rem;
-    height: 2.75rem;
   }
 
   .suggestUs {
