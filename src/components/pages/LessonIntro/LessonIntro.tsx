@@ -20,8 +20,6 @@ export const LessonIntro: React.FC<LessonIntroProps> = ({ className }) => {
                 <div className={styles.headerText}>تفکر سیستمی</div>
             </div>
 
-            <MainFooter/>
-
         </div>
     </div>
   );
