@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./LessonIntro.module.scss";
 import clsx from "clsx";
-import {MainFooter} from "../../MainFooter/MainFooter.tsx"
+// import {MainFooter} from "../../MainFooter/MainFooter.tsx"
 import BackIcon from "./BackBtn.png"
 import {NavLink} from "react-router-dom";
 
@@ -19,6 +19,8 @@ export const LessonIntro: React.FC<LessonIntroProps> = ({ className }) => {
                 </NavLink>
                 <div className={styles.headerText}>تفکر سیستمی</div>
             </div>
+
+            {/*<MainFooter/>*/}
 
         </div>
     </div>
