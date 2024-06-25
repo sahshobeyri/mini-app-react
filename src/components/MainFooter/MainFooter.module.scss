@@ -3,11 +3,12 @@
   color: white;
   text-align: center;
   position: fixed;
+  padding: 4vw 0;
   bottom: 0;
   width: 100%;
   @apply
   flex flex-row
-  items-center justify-center shadow-2xl shadow-black p-2;
+  items-center justify-center shadow-2xl shadow-black;
   gap: 15vw;
 
   .footerIcon {
