@@ -2,8 +2,9 @@ import React from "react";
 import styles from "./Home.module.scss";
 import clsx from "clsx";
 import {NavLink} from "react-router-dom";
-import logoIcon from "./kicon2.png"
-import profileIcon from "./FigmaProfile.png"
+import LogoIcon from "./kicon2.png"
+import ProfileIcon from "./FigmaProfile.png"
+import HomeIcon from "./explore.png"
 
 export type HomeProps = {
   className?: string;
@@ -14,7 +15,7 @@ export const Home: React.FC<HomeProps> = ({ className }) => {
     <div className={clsx(styles.Home, className)}>
         <div className={styles.container}>
             <div dir="rtl" className={styles.header}>
-                <img className={styles.headerLogo} src={logoIcon} alt={"لوگو"}></img>
+                <img className={styles.headerLogo} src={LogoIcon} alt={"لوگو"}></img>
                 <div className={styles.headerText}>خوشه</div>
             </div>
 
@@ -97,13 +98,17 @@ export const Home: React.FC<HomeProps> = ({ className }) => {
                 <div dir="rtl" className={styles.title}>سلام سلام</div>
                 <div dir="rtl" className={styles.footerProfile}>
                     <NavLink to="/profile">
-                        <img src={profileIcon} alt="profile-img"/>
+                        <img src={ProfileIcon} alt="profile-img"/>
+                    </NavLink>
+                </div>
+                <div dir="rtl" className={styles.footerHome}>
+                    <NavLink to="/">
+                        <img src={HomeIcon} alt="explore-img"/>
                     </NavLink>
                 </div>
             </div>
 
         </div>
-
     </div>
   );
 };
