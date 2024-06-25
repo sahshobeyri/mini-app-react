@@ -12,17 +12,17 @@ export type MainFooterProps = {
 export const MainFooter: React.FC<MainFooterProps> = () => {
     return (
         <div dir="rtl" className={styles.footer}>
-            <div dir="rtl" className={styles.footerProfile}>
+            <div dir="rtl" className={styles.footerIcon}>
                 <NavLink to="/profile">
                     <img src={ProfileIcon} alt="profile-img"/>
                 </NavLink>
             </div>
-            <div dir="rtl" className={styles.footerHome}>
+            <div dir="rtl" className={styles.footerIcon}>
                 <NavLink to="/">
                     <img src={HomeIcon} alt="home-img"/>
                 </NavLink>
             </div>
-            <div dir="rtl" className={styles.footerHome}>
+            <div dir="rtl" className={styles.footerIcon}>
                 <NavLink to="/">
                     <img src={BookmarkIcon} alt="bookmark-img"/>
                 </NavLink>

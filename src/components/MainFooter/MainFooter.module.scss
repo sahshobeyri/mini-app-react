@@ -1,25 +1,19 @@
 .footer {
-  background-color: #333;
+  background-color: #FAFAFA;
   color: white;
   text-align: center;
-  padding: 20px 0;
+  padding: 10px 0;
   position: fixed;
   bottom: 0;
   width: 100%;
   @apply
   flex flex-row
-  items-center justify-center
-  bg-amber-400 p-3;
-  gap: 4vw;
+  items-center justify-center shadow-2xl shadow-black;
+  gap: 15vw;
 
-  .footerProfile {
-    width: 1.5rem;
-    height: 1.5rem;
-  }
-
-  .footerHome {
-    width: 1.5rem;
-    height: 1.5rem;
+  .footerIcon {
+    width: 10vw;
+    height: 10vw;
   }
 
   .footerText {
