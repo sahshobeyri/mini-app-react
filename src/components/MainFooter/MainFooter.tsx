@@ -23,7 +23,7 @@ export const MainFooter: React.FC<MainFooterProps> = () => {
                 </NavLink>
             </div>
             <div dir="rtl" className={styles.footerIcon}>
-                <NavLink to="/">
+                <NavLink to="/bookmarks">
                     <img src={BookmarkIcon} alt="bookmark-img"/>
                 </NavLink>
             </div>

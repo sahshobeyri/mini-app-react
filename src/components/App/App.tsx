@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 import {Home} from "../pages/Home/Home.tsx"
 import {Profile} from "../pages/Profile/Profile.tsx";
+import {Bookmarks} from "../pages/Bookmarks/Bookmarks.tsx";
 
 export type AppProps = {
   className?: string;
@@ -20,6 +21,7 @@ export const App: React.FC<AppProps> = ({ className }) => {
               <Routes>
                   <Route path="/" element={<Home/>}/>
                   <Route path="/profile" element={<Profile/>}/>
+                  <Route path="/bookmarks" element={<Bookmarks/>}/>
               </Routes>
           </Router>
       </div>
