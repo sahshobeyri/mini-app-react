@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./MainFooter.module.scss";
 import {NavLink} from "react-router-dom";
 import ProfileIcon from "./profile.svg"
-import HomeIcon from "./home.svg"
+import HomeIcon from "./home3.svg"
 import BookmarkIcon from "./bookmark.svg"
 
 export type MainFooterProps = {
