@@ -17,7 +17,7 @@ export const Profile: React.FC<ProfileProps> = ({ className }) => {
             </div>
 
             <div dir="rtl" className={styles.footer}>
-                <div dir="rtl" className={styles.title}>اینجا فوتر است</div>
+                <div dir="rtl" className={styles.footerText}>اینجا فوتر است</div>
                 <div dir="rtl" className={styles.footerProfile}>
                     <NavLink to="/">
                         <img src={profileIcon} alt="profile-img"/>
