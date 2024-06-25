@@ -1,9 +1,9 @@
 import React from "react";
 import styles from "./MainFooter.module.scss";
 import {NavLink} from "react-router-dom";
-import ProfileIcon from "./FigmaProfile.png"
-import HomeIcon from "./explore.png"
-import BookmarkIcon from "./bookmark.png"
+import ProfileIcon from "./profile.svg"
+import HomeIcon from "./home.svg"
+import BookmarkIcon from "./bookmark.svg"
 
 export type MainFooterProps = {
     className?: string;
