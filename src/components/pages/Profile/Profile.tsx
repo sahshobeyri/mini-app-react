@@ -1,8 +1,7 @@
 import React from "react";
 import styles from "./Profile.module.scss";
 import clsx from "clsx";
-import {NavLink} from "react-router-dom";
-import profileIcon from "../Home/FigmaProfile.png";
+import {MainFooter} from "../../MainFooter/MainFooter.tsx"
 
 export type ProfileProps = {
   className?: string;
@@ -16,14 +15,7 @@ export const Profile: React.FC<ProfileProps> = ({ className }) => {
                 <div className={styles.headerText}>پروفایل</div>
             </div>
 
-            <div dir="rtl" className={styles.footer}>
-                <div dir="rtl" className={styles.footerText}>اینجا فوتر است</div>
-                <div dir="rtl" className={styles.footerProfile}>
-                    <NavLink to="/">
-                        <img src={profileIcon} alt="profile-img"/>
-                    </NavLink>
-                </div>
-            </div>
+            <MainFooter/>
 
         </div>
     </div>
