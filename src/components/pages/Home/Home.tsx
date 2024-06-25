@@ -3,6 +3,7 @@ import styles from "./Home.module.scss";
 import clsx from "clsx";
 import LogoIcon from "./kicon2.png"
 import {MainFooter} from "../../MainFooter/MainFooter.tsx"
+import {NavLink} from "react-router-dom";
 
 export type HomeProps = {
   className?: string;
@@ -90,7 +91,11 @@ export const Home: React.FC<HomeProps> = ({ className }) => {
                     اگه موضوع، کتاب یا مقاله‌ی خاصی هست که دوست داری به خوشه اضافه بشه،
                     این‌جا به ما پیشنهاد بده.
                 </div>
-                <div dir="rtl" className={styles.suggestUsCta}>پیشنهاد بده</div>
+
+                <NavLink to="/suggestUs">
+                    <div dir="rtl" className={styles.suggestUsCta}>پیشنهاد بده</div>
+                </NavLink>
+
             </div>
 
             <MainFooter/>
