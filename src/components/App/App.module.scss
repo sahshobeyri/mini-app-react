@@ -97,52 +97,6 @@
     height: 1.5rem;
   }
 
-  .suggestUs {
-    width: 80vw;
-    height: auto;
-    border-color: #8E24A8;
-    border-width: 2px;
-    @apply
-    flex flex-col
-    items-center justify-center
-    bg-white rounded-lg p-3;
-    gap: 4vw;
-  }
-
-  .suggestUsTitle{
-    font-weight: bolder;
-    text-align: center;
-    vertical-align: center;
-    color: black;
-  }
-
-  .suggestUsSubtitle {
-    font-weight: normal;
-    text-align: center;
-    vertical-align: center;
-    color: black;
-  }
-
-  .suggestUsCta {
-    font-weight: normal;
-    border-radius: 10rem;
-    border-color: black;
-    border-width: 2px;
-    background-color: #55A800;
-    color: black;
-    padding: 1rem;
-  }
-
-  .footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-  }
-
   .title {
     @apply text-2xl font-black;
   }
