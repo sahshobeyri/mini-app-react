@@ -1,0 +1,27 @@
+.LessonIntro {
+  @apply flex w-full h-full flex-col items-center justify-start bg-white;
+
+  .container {
+    @apply flex w-full flex-col items-center justify-start gap-2.5 bg-white rounded-lg duration-300;
+  }
+
+  .header {
+    @apply flex w-full flex-row items-center justify-start gap-2 p-3;
+    background-color: #935697;
+
+    .headerText {
+      color: white;
+      font-weight: bold;
+      font-size: x-large;
+      text-align: center;
+      padding-bottom: 0.4rem;
+      margin-right: 0.5rem;
+    }
+
+    .headerBackBtn {
+      width: 6vw;
+      height: 6vw;
+      cursor: pointer;
+    }
+  }
+}
