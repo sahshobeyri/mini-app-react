@@ -8,7 +8,7 @@ export type MainFooterProps = {
     className?: string;
 };
 
-export const MainFooter: React.FC<MainFooterProps> = ({className}) => {
+export const MainFooter: React.FC<MainFooterProps> = () => {
     return (
         <div dir="rtl" className={styles.footer}>
             <div dir="rtl" className={styles.footerText}>سلام سلام</div>
