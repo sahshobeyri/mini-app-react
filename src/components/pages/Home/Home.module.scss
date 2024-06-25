@@ -25,43 +25,43 @@
       padding-bottom: 0.4rem;
     }
   }
-  
+
   .bannerFrame{
     @apply flex w-full flex-row items-center justify-start
     gap-2 bg-white rounded-sm p-3;
+
+    .banner {
+      color: black;
+      width: 10rem;
+      height: 7rem;
+      @apply
+      flex flex-row items-center justify-center
+      gap-2 bg-gray-2 rounded-xl p-3 border-2;
+    }
   }
 
   .cardFrame {
     @apply flex w-full flex-col items-start justify-start
     gap-1 bg-white rounded-sm p-3;
-  }
 
-  .cardFrameTitle {
-    color: black;
-    font-size: 1rem;
-  }
+    .cardFrameTitle {
+      color: black;
+      font-size: 1rem;
+    }
 
-  .cardSlider {
-    @apply flex w-full flex-row items-center justify-start
-    gap-2 bg-white rounded-sm p-3;
-  }
+    .cardSlider {
+      @apply flex w-full flex-row items-center justify-start
+      gap-2 bg-white rounded-sm p-3;
 
-  .card {
-    color: black;
-    width: 7rem;
-    height: 7rem;
-    @apply
-    flex flex-row items-center justify-center
-    gap-2 bg-gray-2 rounded-xl p-3 border-2;
-  }
-
-  .banner {
-    color: black;
-    width: 10rem;
-    height: 7rem;
-    @apply
-    flex flex-row items-center justify-center
-    gap-2 bg-gray-2 rounded-xl p-3 border-2;
+      .card {
+        color: black;
+        width: 7rem;
+        height: 7rem;
+        @apply
+        flex flex-row items-center justify-center
+        gap-2 bg-gray-2 rounded-xl p-3 border-2;
+      }
+    }
   }
 
   .categoryBubbles{
