@@ -51,4 +51,21 @@
       }
     }
   }
+
+  .ctaFrame{
+    @apply flex w-full flex-row items-center justify-center bg-white p-4;
+
+    .mainCta{
+      background-color: #935697;
+      text-align: center;
+      color: white;
+      padding: 2.5vw 7vw;
+      font-size: 4vw;
+      font-weight: normal;
+      border-radius: 6vw;
+    }
+    .abstractCta{}
+    .bookmarkBtn{}
+    .shareBtn{}
+  }
 }

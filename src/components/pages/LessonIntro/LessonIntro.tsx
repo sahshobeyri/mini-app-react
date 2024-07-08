@@ -1,7 +1,6 @@
 import React from "react";
 import styles from "./LessonIntro.module.scss";
 import clsx from "clsx";
-// import {MainFooter} from "../../MainFooter/MainFooter.tsx"
 import BackIcon from "./BackBtn.png"
 import IntroPic from "./IntroPic.png"
 import {NavLink} from "react-router-dom";
@@ -28,7 +27,13 @@ export const LessonIntro: React.FC<LessonIntroProps> = ({ className }) => {
                     <div className={styles.pictureCaptionAuthor}>مجید زنجیران</div>
                 </div>
             </div>
-            {/*<MainFooter/>*/}
+
+            <div dir="rtl" className={styles.ctaFrame}>
+                <div className={styles.mainCta}>ادامه مطالعه</div>
+                {/*<div className={styles.abstractCta}>شسیب</div>*/}
+                {/*<div className={styles.bookmarkBtn}>شسیب</div>*/}
+                {/*<div className={styles.shareBtn}>شسیب</div>*/}
+            </div>
 
         </div>
     </div>
