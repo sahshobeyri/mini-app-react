@@ -75,6 +75,12 @@ export const LessonIntro: React.FC<LessonIntroProps> = ({ className }) => {
                 </div>
             </div>
 
+            <div dir="rtl" className={styles.descriptionFrame}>
+                <div dir="rtl" className={styles.description}>
+                    تفکر سیستمی یک رویکرد جامع و همه‌جانبه به تحلیل و حل مسائل است که به جای تمرکز بر عناصر و اجزای جداگانه، به کل سیستم و روابط بین اجزا توجه می‌کند. این نوع تفکر به ما کمک می‌کند تا درک بهتری از پیچیدگی‌ها و تعاملات موجود در سیستم‌ها و فرآیندها داشته باشیم.
+                </div>
+            </div>
+
         </div>
     </div>
   );

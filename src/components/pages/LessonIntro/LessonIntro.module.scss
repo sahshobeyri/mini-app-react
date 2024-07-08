@@ -115,4 +115,21 @@
       }
     }
   }
+
+  .descriptionFrame{
+    @apply w-full bg-white;
+    padding: 3vw 6vw;
+    .description{
+      border-width: 2px;
+      border-color: #935697;
+      background-color: #F4EEF5;
+      color: #5F6368;
+      border-radius: 4vw;
+      padding: 4vw 5vw;
+      font-size: 4vw;
+      line-height: 6vw;
+      text-justify: distribute-all-lines;
+      user-select: none;
+    }
+  }
 }
