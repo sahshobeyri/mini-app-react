@@ -67,7 +67,9 @@ export const Home: React.FC<HomeProps> = ({ className }) => {
 
             <div dir="rtl" className={styles.categoryBubbles}>
                 <div dir="rtl" className={styles.categoryBubbleRow}>
-                    <div dir="rtl" className={styles.categoryBubble}>توسعه فردی</div>
+                    <NavLink to="/lessonIntro">
+                        <div dir="rtl" className={styles.categoryBubble}>توسعه فردی</div>
+                    </NavLink>
                     <div dir="rtl" className={styles.categoryBubble}>روانشناسی</div>
                     <div dir="rtl" className={styles.categoryBubble}>تاریخ</div>
                 </div>
