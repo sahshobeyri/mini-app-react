@@ -89,7 +89,7 @@
   }
 
   .chaptersFrame{
-    @apply flex w-full flex-col items-center justify-evenly bg-white gap-5;
+    @apply flex w-full flex-col items-center justify-evenly bg-white gap-4;
     padding: 4vw 6vw;
     .chapter{
       @apply flex w-full flex-row items-center justify-evenly gap-1;
