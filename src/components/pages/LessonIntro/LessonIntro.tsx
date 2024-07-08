@@ -33,7 +33,9 @@ export const LessonIntro: React.FC<LessonIntroProps> = ({ className }) => {
             </div>
 
             <div dir="rtl" className={styles.ctaFrame}>
-                <div className={styles.mainCta}>ادامه مطالعه</div>
+                <NavLink to="/reader">
+                    <div className={styles.mainCta}>ادامه مطالعه</div>
+                </NavLink>
                 <img className={styles.otherCta} src={AbstractIcon} alt="abstract-icon"/>
                 <img className={styles.otherCta} src={BookmarkIcon} alt="bookmark-icon"/>
                 <img className={styles.otherCta} src={ShareIcon} alt="share-icon"/>
