@@ -6,6 +6,7 @@ import IntroPic from "./IntroPic.png"
 import ShareIcon from "./share.svg"
 import BookmarkIcon from "./bookmark.svg"
 import AbstractIcon from "./abstract.svg"
+import LockIcon from "./lock.svg"
 import {NavLink} from "react-router-dom";
 
 export type LessonIntroProps = {
@@ -41,6 +42,37 @@ export const LessonIntro: React.FC<LessonIntroProps> = ({ className }) => {
             <div dir="rtl" className={styles.progressFrame}>
                 <div className={styles.progressLog}>20% مطالعه شده</div>
                 <div className={styles.timeNeeded}>مدت تقریبی مطالعه: 8 دقیقه</div>
+            </div>
+
+            <div dir="rtl" className={styles.chaptersFrame}>
+                <div className={styles.chapter}>
+                    <div className={styles.chapterText}>
+                        <div className={styles.chapterTitle}>فصل 1</div>
+                        <div className={styles.chapterSubtitle}>داستان از کجا شروع میشود؟</div>
+                    </div>
+                    <img className={styles.chapterIcon} src={LockIcon} alt="lock-icon"/>
+                </div>
+                <div className={styles.chapter}>
+                    <div className={styles.chapterText}>
+                        <div className={styles.chapterTitle}>فصل 2</div>
+                        <div className={styles.chapterSubtitle}>بعد به کجا میرویم؟</div>
+                    </div>
+                    <img className={styles.chapterIcon} src={LockIcon} alt="lock-icon"/>
+                </div>
+                <div className={styles.chapter}>
+                    <div className={styles.chapterText}>
+                        <div className={styles.chapterTitle}>فصل 3</div>
+                        <div className={styles.chapterSubtitle}>مثال هایی از تفکر سیستمی</div>
+                    </div>
+                    <img className={styles.chapterIcon} src={LockIcon} alt="lock-icon"/>
+                </div>
+                <div className={styles.chapter}>
+                    <div className={styles.chapterText}>
+                        <div className={styles.chapterTitle}>فصل 4</div>
+                        <div className={styles.chapterSubtitle}>آرکتایپ های سیستمی</div>
+                    </div>
+                    <img className={styles.chapterIcon} src={LockIcon} alt="lock-icon"/>
+                </div>
             </div>
 
         </div>
