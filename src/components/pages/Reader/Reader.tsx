@@ -21,6 +21,12 @@ export const Reader: React.FC<ReaderProps> = ({className}) => {
                 {/*    <div className={styles.headerText}>تفکر سیستمی</div>*/}
                 {/*</div>*/}
 
+                <div className={styles.header}>
+                    <span className={styles.headerTextBolder}>1</span>
+                    <span className={styles.headerText}>/</span>
+                    <span className={styles.headerText}>47</span>
+                </div>
+
                 <div dir="rtl" className={styles.footer}>
                     <div dir="rtl" className={styles.footerIcon}>
                         <img src={ShareIcon} alt="share-img"/>
