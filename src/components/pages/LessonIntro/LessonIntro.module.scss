@@ -132,4 +132,21 @@
       user-select: none;
     }
   }
+
+  .metadataFrame{
+    @apply flex w-full flex-row items-center justify-evenly bg-white gap-1.5;
+    padding: 4vw 6vw;
+    .metadata{
+      @apply flex flex-row items-center justify-evenly gap-1 bg-white;
+      .metadataIcon{
+        width: 4.2vw;
+        height: 4.2vw;
+      }
+      .metadataText{
+        color: #8E949C;
+        font-size: 2.8vw;
+        font-weight: bold;
+      }
+    }
+  }
 }

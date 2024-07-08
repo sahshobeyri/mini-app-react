@@ -7,6 +7,10 @@ import ShareIcon from "./share.svg"
 import BookmarkIcon from "./bookmark.svg"
 import AbstractIcon from "./abstract.svg"
 import LockIcon from "./lock.svg"
+import DateIcon from "./calendar.svg"
+import ReadIcon from "./pages.svg"
+import LikedIcon from "./liked.svg"
+import SharedIcon from "./shared.svg"
 import {NavLink} from "react-router-dom";
 
 export type LessonIntroProps = {
@@ -83,6 +87,32 @@ export const LessonIntro: React.FC<LessonIntroProps> = ({ className }) => {
                 </div>
             </div>
 
+            <div dir="rtl" className={styles.metadataFrame}>
+                <div className={styles.metadata}>
+                    <img className={styles.metadataIcon} src={DateIcon} alt="date-icon"/>
+                    <div className={styles.metadataText}>
+                        122 روز پیش
+                    </div>
+                </div>
+                <div className={styles.metadata}>
+                    <img className={styles.metadataIcon} src={ReadIcon} alt="date-icon"/>
+                    <div className={styles.metadataText}>
+                        28K خواننده
+                    </div>
+                </div>
+                <div className={styles.metadata}>
+                    <img className={styles.metadataIcon} src={LikedIcon} alt="date-icon"/>
+                    <div className={styles.metadataText}>
+                        78.3K پسند
+                    </div>
+                </div>
+                <div className={styles.metadata}>
+                    <img className={styles.metadataIcon} src={SharedIcon} alt="date-icon"/>
+                    <div className={styles.metadataText}>
+                        2.5K بازنشر
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
   );
