@@ -20,6 +20,13 @@ export const SuggestUs: React.FC<SuggestUsProps> = ({ className }) => {
                 <div className={styles.headerText}>پیشنهاد به خوشه</div>
             </div>
 
+            <div dir="rtl" className={styles.mainFrame}>
+                <textarea
+                    className={styles.textInput}
+                    placeholder="چه موضوعات یا خلاصه کتاب‌ها یا مقالاتی رو دوست داری که توی خوشه داشته باشی؟"/>
+                <div className={styles.sendBtn}>بفرست</div>
+            </div>
+
             <MainFooter/>
 
         </div>

@@ -24,4 +24,33 @@
       cursor: pointer;
     }
   }
+
+  .mainFrame{
+    @apply flex w-full h-full flex-col items-center justify-start gap-5;
+    .textInput{
+      margin-top: 4vw;
+      padding: 3vw;
+      text-align: right;
+      vertical-align: top;
+      width: 90vw;
+      height: 30vh;
+      border-color: gray;
+      border-radius: 3vw;
+      border-width: 2px;
+      color: black;
+      font-size: 5vw;
+    }
+    .sendBtn{
+      background-color: #935697;
+      text-align: center;
+      color: white;
+      width: 90vw;
+      padding: 3vw 4vw;
+      font-size: 5vw;
+      font-weight: normal;
+      border-radius: 6vw;
+      user-select: none;
+      cursor: pointer;
+    }
+  }
 }
