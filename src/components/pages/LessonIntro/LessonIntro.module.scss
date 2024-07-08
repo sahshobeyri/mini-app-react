@@ -2,11 +2,11 @@
   @apply flex w-full h-full flex-col items-center justify-start bg-white;
 
   .container {
-    @apply flex w-full flex-col items-center justify-start gap-2.5 bg-white rounded-lg duration-300;
+    @apply flex w-full flex-col items-center justify-start bg-white rounded-lg duration-300;
   }
 
   .header {
-    @apply flex w-full flex-row items-center justify-start gap-2 p-3;
+    @apply flex w-full flex-row items-center justify-start gap-2 p-4;
     background-color: #935697;
 
     .headerText {
@@ -22,6 +22,33 @@
       width: 6vw;
       height: 6vw;
       cursor: pointer;
+    }
+  }
+
+  .pictureFrame{
+    @apply flex w-full flex-col items-center justify-start bg-white;
+    .picture{
+      @apply w-full;
+    }
+
+    .pictureCaptionFrame{
+      @apply flex w-full flex-col items-center justify-start p-4;
+      background-color: #935697;
+
+      .pictureCaptionSubtitle{
+        color: white;
+        font-weight: bold;
+        font-size: 5vw;
+        text-align: center;
+        padding-bottom: 2vw;
+      }
+      .pictureCaptionAuthor{
+        color: white;
+        font-weight: normal;
+        font-size: 4vw;
+        text-align: center;
+        padding-bottom: 1vw;
+      }
     }
   }
 }
