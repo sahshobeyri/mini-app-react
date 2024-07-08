@@ -3,6 +3,9 @@ import styles from "./LessonIntro.module.scss";
 import clsx from "clsx";
 import BackIcon from "./BackBtn.png"
 import IntroPic from "./IntroPic.png"
+import ShareIcon from "./share.svg"
+import BookmarkIcon from "./bookmark.svg"
+import AbstractIcon from "./abstract.svg"
 import {NavLink} from "react-router-dom";
 
 export type LessonIntroProps = {
@@ -30,9 +33,9 @@ export const LessonIntro: React.FC<LessonIntroProps> = ({ className }) => {
 
             <div dir="rtl" className={styles.ctaFrame}>
                 <div className={styles.mainCta}>ادامه مطالعه</div>
-                {/*<div className={styles.abstractCta}>شسیب</div>*/}
-                {/*<div className={styles.bookmarkBtn}>شسیب</div>*/}
-                {/*<div className={styles.shareBtn}>شسیب</div>*/}
+                <img className={styles.otherCta} src={AbstractIcon} alt="abstract-icon"/>
+                <img className={styles.otherCta} src={BookmarkIcon} alt="bookmark-icon"/>
+                <img className={styles.otherCta} src={ShareIcon} alt="share-icon"/>
             </div>
 
         </div>

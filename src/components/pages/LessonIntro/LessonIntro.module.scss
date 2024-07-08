@@ -53,19 +53,23 @@
   }
 
   .ctaFrame{
-    @apply flex w-full flex-row items-center justify-center bg-white p-4;
+    @apply flex w-full flex-row items-center justify-evenly bg-white p-4;
 
     .mainCta{
       background-color: #935697;
       text-align: center;
       color: white;
-      padding: 2.5vw 7vw;
+      padding: 2.5vw 8vw;
       font-size: 4vw;
       font-weight: normal;
       border-radius: 6vw;
+      user-select: none;
+      cursor: pointer;
     }
-    .abstractCta{}
-    .bookmarkBtn{}
-    .shareBtn{}
+    .otherCta{
+      width: 11vw;
+      height: 11vw;
+      cursor: pointer;
+    }
   }
 }
