@@ -72,4 +72,19 @@
       cursor: pointer;
     }
   }
+
+  .progressFrame{
+    @apply flex w-full flex-col items-start justify-center bg-white gap-2.5;
+    padding: 1.5vw 7vw;
+    .progressLog{
+      font-size: 5vw;
+      color: #5F6368;
+      font-weight: bold;
+    }
+    .timeNeeded{
+      font-size: 4vw;
+      color: #5F6368;
+      font-weight: normal;
+    }
+  }
 }

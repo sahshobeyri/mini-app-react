@@ -38,6 +38,11 @@ export const LessonIntro: React.FC<LessonIntroProps> = ({ className }) => {
                 <img className={styles.otherCta} src={ShareIcon} alt="share-icon"/>
             </div>
 
+            <div dir="rtl" className={styles.progressFrame}>
+                <div className={styles.progressLog}>20% مطالعه شده</div>
+                <div className={styles.timeNeeded}>مدت تقریبی مطالعه: 8 دقیقه</div>
+            </div>
+
         </div>
     </div>
   );
